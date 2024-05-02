@@ -10,7 +10,6 @@ app.use((req, res, next) => {
 
 app.get("/", (req, res) => {
     const data = require('./data.json')
-    console.log({ data })
     res.status(200).send(data)
 });
 

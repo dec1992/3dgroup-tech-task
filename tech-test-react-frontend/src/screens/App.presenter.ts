@@ -45,10 +45,8 @@ class AppPresenter {
     handleDeleteProduct = async (name: string) => {
         const products = [...this.stateProducts]
         const index = products.findIndex((product) => product.name === name)
-        console.log(index)
         if (index < 0) return
         products.splice(index, 1)
-        console.log(products)
         this.setStateProducts(products)
     }
 
